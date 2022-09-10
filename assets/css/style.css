@@ -1,3 +1,8 @@
+@import url("destaques.css");
+@import url("populares.css");
+@import url("menu.css");
+@import url("responsivo.css");
+
 .app {
     background: #f1f1f1;
     display: grid;  
@@ -7,20 +12,25 @@
     "conteudo"
     "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
+    grid-template-rows: 50px auto auto;
 }
 
 .cabecalho {
-    background: rgba(0, 170, 0, 0.549);
+    display: flex;
+    align-items: center;
     grid-area: cabecalho;
+    padding: 0 2em;
 }
  
 .conteudo {
-    background: rgba(255, 0, 0, 0.512);
     grid-area: conteudo;
+    padding: 0 2em;
 }
 
 .rodape {
-    background: rgba(0, 0, 255, 0.532);
+    background: #fdfdfd;
+    font-size: .8em;
     grid-area: rodape;
+    padding: 1em;
+    text-align: center;
 }
